@@ -1,16 +1,14 @@
-package BO;
+package UI;
 
-public class Item {
+public class ItemInfo {
     private String name;
     private String type;
     private int cost;
-    private int id;
 
-    private Item(String name, String type, int cost, int id) {
+    public ItemInfo(String name, String type, int cost) {
         this.name = name;
         this.type = type;
         this.cost = cost;
-        this.id = id;
     }
 
     public String getName() {
@@ -35,13 +33,5 @@ public class Item {
 
     public void setCost(int cost) {
         this.cost = cost;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }
